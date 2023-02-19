@@ -25,6 +25,11 @@ namespace ZadanieZTestow
 
             int counter = 0;
             int result = Int32.Parse(userInput);
+
+            if(result == 0 || result == 1)
+            {
+                return "Liczba nie jest liczba pierwsza";
+            }
             for (int i = 1; i <= result; i++)
             {
                 if (result % i == 0)
